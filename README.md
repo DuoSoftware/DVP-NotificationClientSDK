@@ -2,13 +2,13 @@
 
 ### How to
 ## Initiate module
-var configOptions =
 
+    var configOptions =
     {
 
         URL:"http://127.0.0.1:8089",
-        Callbacks:{
-    
+        Callbacks:
+        {
             onDisconnected:onDisconnected,
             onMessageReceived:onMessageReceived,
             onAgentFound:onAgentFound,
@@ -21,13 +21,13 @@ var configOptions =
             onConferenceMemberJoined:onConferenceMemberJoined,
             onConferenceMemberLeft:onConferenceMemberLeft,
             ConferenceMemberStatus:ConferenceMemberStatus,
-     },
+        },
         jwt:token
     };
 
-#### URL 
+#### URL :-
 Destination URL of desired Notification Server
-#### Callbacks 
+#### Callbacks :-
 These properties are custom properties and working as event catchers. Those methods should be initiated in client's end.
 Developer can add customized properties to catch various events returning from server.
 
@@ -42,6 +42,8 @@ Ex:-
                 // Do something here
           };
 
- #### Jwt
-        Security token valid with JWT
+#### token :-
+ Security token valid with JWT
 
+#### Initiate function
+     ClientConfiguration(configOptions, token);
