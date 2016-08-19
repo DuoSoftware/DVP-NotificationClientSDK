@@ -33,16 +33,16 @@ Developer can add customized properties to catch various events returning from s
 
 Ex:-
 
-       function  onAgentFound(data)
-          {
-               // Do something here
-          };
-        function  onAgentConnected(data)
-          {
-                // Do something here
-          };
+    function  onAgentFound(data)
+    {
+        // Do something here
+    };
+    function  onAgentConnected(data)
+    {
+         // Do something here
+    };
 
-#### token :-
+ #### token :-
  Security token valid with JWT
 
 #### Initiate function
